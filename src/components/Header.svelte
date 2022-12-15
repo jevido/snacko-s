@@ -35,6 +35,7 @@
 							bind:value={search}
 							class="block w-full rounded-md border border-transparent bg-nord-2 py-2 pl-10 pr-3 text-sm placeholder-gray-400 focus:border-white focus:bg-nord-5 focus:text-gray-900 focus:placeholder-gray-500 focus:outline-none focus:ring-white sm:text-sm"
 							placeholder="Search for snacko's"
+							autofocus
 							type="search"
 						/>
 					</div>
