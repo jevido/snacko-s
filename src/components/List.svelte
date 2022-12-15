@@ -4,7 +4,7 @@
 </script>
 
 <div class="flex w-full h-[75vh] justify-center">
-	<div class="flex flex-col w-9/12 inset-1 bg-slate-600 -shadow-xl">
+	<div class="flex flex-col w-9/12 inset-1 -shadow-xl">
 		<div class="flex w-full justify-center bg-nord-1 p-2 bold">
 			<div class="w-1/6">Rating</div>
 			<div class="w-2/6">Naam</div>
@@ -12,9 +12,9 @@
 			<div class="w-1/6">&nbsp;</div>
 		</div>
 
-		<ul tabindex="-1" class="scroll-py-3 overflow-y-scroll p-3">
+		<ul tabindex="-1" class="scroll-py-3 min-h-full overflow-y-auto p-3 bg-slate-600 rounded-sm">
 			{#each filteredOptions as snack}
-				<li class="flex p-3 select-none rounded-xl hover:bg-nord-4/40">
+				<li class="flex p-3 items-center select-none rounded-xl hover:bg-nord-4/40">
 					<div class="w-1/6">{snack.rating * 10}</div>
 					<div class="w-2/6">
 						{snack.name}
