@@ -1,5 +1,0 @@
-# Apache config
-# AllUnited thing, for setting content-type of css 
-<FilesMatch ".+\.css$">
-    Header set Content-type "text/css"
-</FilesMatch>
