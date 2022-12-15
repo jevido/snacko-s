@@ -18,7 +18,7 @@
 	}
 </script>
 
-<header class="bg-nord-0">
+<header class="fixed bg-nord-0 w-full">
 	<div class="px-2 mx-auto max-w-7xl sm:px-4 lg:divide-y lg:divide-nord-1 lg:px-8">
 		<div class="relative flex h-16 justify-between">
 			<div
@@ -41,7 +41,7 @@
 				</div>
 			</div>
 		</div>
-		<nav class="hidden lg:flex lg:space-x-16 justify-center lg:py-2" aria-label="Global">
+		<nav class="flex lg:space-x-16 justify-center py-2" aria-label="Global">
 			<!-- Current: "bg-gray-900 text-nord-5", Default: "text-gray-300 hover:bg-nord-1 hover:text-nord-5" -->
 			<button
 				class="text-gray-300 cursor-pointer rounded-md py-2 px-3 inline-flex items-center text-sm font-medium"
@@ -81,6 +81,9 @@
 		</nav>
 	</div>
 </header>
+<div class="h-32">
+	<!-- Spacer -->
+</div>
 
 <style lang="css">
 	.active {
