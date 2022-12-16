@@ -33,6 +33,34 @@ const sauce = {
 
 let snacks = [
 	{
+		rating: 9,
+		url: 'https://www.ah.nl/producten/product/wi492526/mora-chili-cheese',
+		name: 'Chili cheese',
+		sauces: [sauce.mayo, sauce.chili, sauce.samurai],
+		tags: [vega]
+	},
+	{
+		rating: 6,
+		url: 'https://www.ah.nl/producten/product/wi189411/mora-kip-fingers-mini-s',
+		name: 'Kip vingers',
+		sauces: [sauce.samurai, sauce.curry, sauce.chili, sauce.mayo],
+		tags: [meat]
+	},
+	{
+		rating: 9,
+		url: 'https://www.ah.nl/producten/product/wi492754/kaastengels-old-amsterdam',
+		name: 'Kaas stengels (old amsterdam)',
+		sauces: [sauce.chili],
+		tags: [vega]
+	},
+	{
+		rating: 7,
+		url: 'https://www.ah.nl/producten/product/wi183228/ah-mini-loempia-met-groente',
+		name: 'Loempia',
+		sauces: [sauce.samurai, sauce.chili, sauce.curry, sauce.mayo],
+		tags: [vega, vegan]
+	},
+	{
 		rating: 8,
 		url: 'https://www.ah.nl/producten/product/wi388894/mora-oven-mini-frikandellen',
 		name: 'Frikandel',
