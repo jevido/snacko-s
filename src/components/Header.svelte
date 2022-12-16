@@ -16,7 +16,15 @@
 			activeFilters = { all: true };
 		}
 	}
+
+	
+	function focusSearchField()	{
+		console.debug('testdd')
+		document.getElementById('search-field').focus();
+	}
 </script>
+
+<svelte:window on:keydown={focusSearchField} />
 
 <header class="fixed bg-nord-0 w-full">
 	<div class="px-2 mx-auto max-w-7xl sm:px-4 lg:divide-y lg:divide-nord-1 lg:px-8">
@@ -31,11 +39,13 @@
 							<!-- Heroicon name: mini/magnifying-glass -->
 							<Search class="h-5 w-5 text-gray-400" />
 						</div>
+						<!-- svelte-ignore a11y-autofocus -->
 						<input
 							bind:value={search}
 							class="block w-full rounded-md border border-transparent bg-nord-2 py-2 pl-10 pr-3 text-sm placeholder-gray-400 focus:border-white focus:bg-nord-5 focus:text-gray-900 focus:placeholder-gray-500 focus:outline-none focus:ring-white sm:text-sm"
 							placeholder="Search for snacko's"
 							autofocus
+							id="search-field"
 							type="search"
 						/>
 					</div>
