@@ -55,7 +55,7 @@
 					</div>
 
 					<!-- Mobile -->
-					<div class="flex sm:hidden flex-co p-2">
+					<div class="flex sm:hidden flex-col p-2">
 						<div class="flex w-full">
 							<div class="w-9/12">{snack.name}</div>
 							<div class="w-3/12">
