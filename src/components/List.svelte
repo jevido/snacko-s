@@ -14,7 +14,7 @@
 
 		<ul tabindex="-1" class="scroll-py-3 min-h-full overflow-y-auto p-3 bg-slate-600 rounded-sm">
 			{#each filteredOptions as snack}
-				<li class="odd:bg-nord-2/50 rounded-xl select-none rounded-xl hover:bg-nord-4/40">
+				<li class="odd:bg-nord-2/50 select-none rounded-xl hover:bg-nord-4/40">
 					<div class="hidden sm:flex p-3 items-center ">
 						<div class="w-1/6 flex">
 							&nbsp;
@@ -55,7 +55,7 @@
 					</div>
 
 					<!-- Mobile -->
-					<div class="flex flex-col sm:hidden py-2">
+					<div class="flex sm:hidden flex-co p-2">
 						<div class="flex w-full">
 							<div class="w-9/12">{snack.name}</div>
 							<div class="w-3/12">

@@ -19,7 +19,6 @@
 
 	
 	function focusSearchField()	{
-		console.debug('testdd')
 		document.getElementById('search-field').focus();
 	}
 </script>
@@ -60,7 +59,7 @@
 				tabindex="-1"
 				on:click={() => toggleFilter('all')}
 			>
-				All
+				Bi-snacksueel
 			</button>
 
 			<button
