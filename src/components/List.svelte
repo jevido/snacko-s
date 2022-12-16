@@ -1,5 +1,5 @@
 <script>
-	import { ShoppingCart, CornerDownRight, Laugh } from 'lucide-svelte';
+	import { ShoppingCart, CornerDownRight, Laugh, Meh, Frown } from 'lucide-svelte';
 	export let filteredOptions;
 </script>
 
@@ -14,9 +14,20 @@
 
 		<ul tabindex="-1" class="scroll-py-3 min-h-full overflow-y-auto p-3 bg-slate-600 rounded-sm">
 			{#each filteredOptions as snack}
-				<li>
-					<div class="hidden sm:flex p-3 items-center select-none rounded-xl hover:bg-nord-4/40">
-						<div class="w-1/6">{snack.rating * 10}</div>
+				<li class="odd:bg-nord-2/50 rounded-xl select-none rounded-xl hover:bg-nord-4/40">
+					<div class="hidden sm:flex p-3 items-center ">
+						<div class="w-1/6 flex">
+							&nbsp;
+							{snack.rating * 10}%
+							&nbsp;
+							{#if snack.rating > 7}
+								<Laugh class="w-4 fill-nord-0" />
+							{:else if snack.rating < 7 && snack.rating > 3}
+								<Meh class="w-4 fill-nord-0" />
+							{:else}
+								<Frown class="w-4 fill-nord-0" />
+							{/if}
+							&nbsp;</div>
 						<div class="w-2/6">
 							{snack.name}
 							<!-- Tags -->
@@ -60,7 +71,16 @@
 						</div>
 						<div class="flex w-full">
 							<CornerDownRight class="mx-4 w-4" />
-							{snack.rating * 10}%&nbsp;<Laugh class="w-4 fill-nord-0" /> &nbsp;
+							{snack.rating * 10}%
+							&nbsp;
+							{#if snack.rating > 7}
+								<Laugh class="w-4 fill-nord-0" />
+							{:else if snack.rating < 7 && snack.rating > 3}
+								<Meh class="w-4 fill-nord-0" />
+							{:else}
+								<Frown class="w-4 fill-nord-0" />
+							{/if}
+							&nbsp;
 							{#each snack.tags as tag}
 								<span class="bg-{tag.color} rounded-sm p-1 text-xs">{tag.label}</span> &nbsp;
 							{/each}
