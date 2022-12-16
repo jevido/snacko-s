@@ -48,10 +48,10 @@
 				</div>
 			</div>
 		</div>
-		<nav class="flex lg:space-x-16 py-2 overflow-x-auto" aria-label="Global">
+		<nav class="flex py-2 overflow-x-auto" aria-label="Global">
 			<!-- Current: "bg-gray-900 text-nord-5", Default: "text-gray-300 hover:bg-nord-1 hover:text-nord-5" -->
 			<button
-				class="ml-auto text-gray-300 cursor-pointer rounded-md py-2 px-3 inline-flex items-center text-sm font-medium"
+				class="ml-auto mr-4 text-gray-300 cursor-pointer rounded-md py-2 px-3 inline-flex items-center text-sm font-medium"
 				class:active={activeFilters.all}
 				tabindex="-1"
 				on:click={() => toggleFilter('all')}
@@ -60,7 +60,7 @@
 			</button>
 
 			<button
-				class="text-gray-300  cursor-pointer hover:bg-nord-1 hover:text-nord-5 rounded-md py-2 px-3 inline-flex items-center text-sm font-medium"
+				class="mr-4 text-gray-300 cursor-pointer sm:hover:bg-nord-1 hover:text-nord-5 rounded-md py-2 px-3 inline-flex items-center text-sm font-medium"
 				class:active={activeFilters.meat}
 				tabindex="-1"
 				on:click={() => toggleFilter('meat')}
@@ -69,7 +69,7 @@
 			</button>
 
 			<button
-				class="text-gray-300  cursor-pointer hover:bg-nord-1 hover:text-nord-5 rounded-md py-2 px-3 inline-flex items-center text-sm font-medium"
+				class="mr-4 text-gray-300 cursor-pointer sm:hover:bg-nord-1 hover:text-nord-5 rounded-md py-2 px-3 inline-flex items-center text-sm font-medium"
 				class:active={activeFilters.vega}
 				tabindex="-1"
 				on:click={() => toggleFilter('vega')}
@@ -78,7 +78,7 @@
 			</button>
 
 			<button
-				class="mr-auto text-gray-300 cursor-pointer hover:bg-nord-1 hover:text-nord-5 rounded-md py-2 px-3 inline-flex items-center text-sm font-medium"
+				class="mr-auto text-gray-300 cursor-pointer sm:hover:bg-nord-1 hover:text-nord-5 rounded-md py-2 px-3 inline-flex items-center text-sm font-medium"
 				class:active={activeFilters.vegan}
 				tabindex="-1"
 				on:click={() => toggleFilter('vegan')}
