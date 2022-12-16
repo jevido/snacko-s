@@ -17,8 +17,7 @@
 		}
 	}
 
-	
-	function focusSearchField()	{
+	function focusSearchField() {
 		document.getElementById('search-field').focus();
 	}
 </script>
@@ -28,9 +27,7 @@
 <header class="fixed bg-nord-0 w-full">
 	<div class="px-2 mx-auto max-w-7xl sm:px-4 lg:divide-y lg:divide-nord-1 lg:px-8">
 		<div class="relative flex h-16 justify-between">
-			<div
-				class="z-0 flex flex-1 items-center justify-center relative px-2 sm:absolute sm:inset-0"
-			>
+			<div class="z-0 flex flex-1 items-center justify-center relative px-2 sm:absolute sm:inset-0">
 				<div class="w-full sm:max-w-xs">
 					<label for="search" class="sr-only">Search</label>
 					<div class="relative">
@@ -59,7 +56,7 @@
 				tabindex="-1"
 				on:click={() => toggleFilter('all')}
 			>
-				Bi-snacksueel
+				Bisnacksueel
 			</button>
 
 			<button
