@@ -82,7 +82,7 @@
 							{/if}
 							&nbsp;
 							{#each snack.tags as tag}
-								<span class="bg-{tag.color} rounded-sm p-1 text-xs">{tag.label}</span> &nbsp;
+								<span class="bg-{tag.color} rounded-sm p-1 h-7 text-xs">{tag.label}</span> &nbsp;
 							{/each}
 						</div>
 					</div>
