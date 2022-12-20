@@ -10,7 +10,7 @@ export async function load({ params }) {
 	}
 
 	return {
-		success: trui,
+		success: true,
 		room: room.name,
 		expires: room.expires_at
 	};
