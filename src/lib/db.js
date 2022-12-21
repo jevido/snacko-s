@@ -4,4 +4,4 @@ import { MONGODB_URI } from '$env/static/private';
 const client = new MongoClient(MONGODB_URI);
 await client.connect();
 
-export default client.db('snacko-s'); // select database
+export default client.db('snacko-s');
