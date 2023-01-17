@@ -39,6 +39,7 @@ You can preview the production build with `npm run preview`.
 
 ## TODO
 
+- create real homepage
 - add different stores
 - add snack list
 - create algorithm for meat/vega/vegan suggestions
