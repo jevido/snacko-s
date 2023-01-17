@@ -15,7 +15,7 @@ const sauce = {
 	},
 	curry: {
 		label: 'curry',
-		url: 'https://www.ah.nl/producten/product/wi516341/oliehoorn-currysaus'
+		url: 'https://www.ah.nl/producten/product/wi441050/hela-kruiden-ketchup-curry-original'
 	},
 	chili: {
 		label: 'chili',
