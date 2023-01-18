@@ -187,6 +187,27 @@ let snacks = [
 		name: 'Pikanto',
 		sauces: [sauce.samurai, sauce.chili, sauce.curry, sauce.mayo],
 		tags: [meat]
+	},
+	{
+		rating: 6,
+		url: 'https://www.ah.nl/producten/product/wi238825/chio-borrel-bites-mix-paprika-sweet-chili',
+		name: 'Borrel bites mix (chio)',
+		sauces: [],
+		tags: [vegan]
+	},
+	{
+		rating: 6,
+		url: 'https://www.ah.nl/producten/product/wi140746/ah-katjang-pedis-gezouten',
+		name: 'Katjang pedis',
+		sauces: [],
+		tags: [vegan]
+	},
+	{
+		rating: 6,
+		url: 'https://www.ah.nl/producten/product/wi477621/duyvis-borrelnootjes-provencale',
+		name: 'Borrelnootjes provencale (Duyvis)',
+		sauces: [],
+		tags: [vegan]
 	}
 ];
 
